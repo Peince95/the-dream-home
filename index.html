@@ -143,7 +143,54 @@
             border-radius: 7px;
             text-decoration: none;
         }
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #eef2ff;
+}
 
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.contact button {
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    }
         .about {
             padding: 60px 20px;
             text-align: center;
@@ -283,7 +330,27 @@
 
     </section>
 
+<section class="contact" id="contact">
 
+    <h2>Contact Us</h2>
+
+    <p>Have a question or want to know more about a property?</p>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <input type="tel" placeholder="Your Mobile Number">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
     <section class="about" id="about">
 
         <h2>About The Dream Home</h2>
