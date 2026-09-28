@@ -336,7 +336,7 @@
 
     <p>Have a question or want to know more about a property?</p>
 
-    <form>
+    <form id="contactForm">
 
         <input type="text" placeholder="Your Name">
 
@@ -347,6 +347,8 @@
         <textarea placeholder="Your Message"></textarea>
 
         <button type="submit">Send Message</button>
+
+        <p id="formMessage"></p>
 
     </form>
 
@@ -381,7 +383,16 @@ function showDetails(propertyName, location, price) {
     );
 
 }
+    
+document.getElementById("contactForm").addEventListener("submit", function(event) {
 
+    event.preventDefault();
+
+    let message = document.getElementById("formMessage");
+
+    message.textContent = "Thank you! Your message has been received.";
+
+});
 </script>
 </body>
 
