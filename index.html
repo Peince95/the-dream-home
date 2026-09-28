@@ -248,6 +248,21 @@
     <section class="properties" id="properties">
 
         <h2>Our Dream Properties</h2>
+     
+        <div class="property-filter">
+
+    <input type="text" id="searchInput" placeholder="Search by location...">
+
+    <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="75">Up to ₹75 Lakh</option>
+        <option value="125">Up to ₹1.25 Crore</option>
+        <option value="200">Up to ₹2 Crore</option>
+    </select>
+
+    <button onclick="filterProperties()">Search</button>
+
+        </div>
 
         <div class="property-container">
 
