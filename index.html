@@ -422,6 +422,37 @@
         <p>© 2026 The Dream Home. All Rights Reserved.</p>
 
     </footer>
+    
+    <div id="propertyModal" class="property-modal">
+
+    <div class="property-modal-content">
+
+        <button class="close-modal" onclick="closePropertyDetails()">
+            ×
+        </button>
+
+        <img id="modalImage" src="" alt="Property">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalLocation"></p>
+
+        <h3 id="modalPrice"></h3>
+
+        <div class="property-info">
+
+            <span id="modalBedrooms"></span>
+
+            <span id="modalBathrooms"></span>
+
+            <span id="modalArea"></span>
+
+        </div>
+
+    </div>
+
+    </div>
+    
 <script>
 
 function showDetails(propertyName, location, price) {
