@@ -220,8 +220,9 @@
 
                     <h4>₹75 Lakh</h4>
 
-                    <a href="#" class="property-btn">
-                        View Details
+                    <a href="#" class="property-btn"
+   onclick="showDetails('Modern Family House', 'Indore, Madhya Pradesh', '₹75 Lakh')">
+    View Details
                     </a>
 
                 </div>
@@ -244,9 +245,10 @@
 
                     <h4>₹1.25 Crore</h4>
 
-                    <a href="#" class="property-btn">
-                        View Details
-                    </a>
+                   <a href="#" class="property-btn"
+   onclick="showDetails('Luxury Apartment', 'Mumbai, Maharashtra', '₹1.25 Crore')">
+    View Details
+                   </a>
 
                 </div>
 
@@ -268,9 +270,10 @@
 
                     <h4>₹2 Crore</h4>
 
-                    <a href="#" class="property-btn">
-                        View Details
-                    </a>
+                  <a href="#" class="property-btn"
+   onclick="showDetails('Beautiful Dream Villa', 'Jaipur, Rajasthan', '₹2 Crore')">
+    View Details
+                  </a> 
 
                 </div>
 
@@ -300,7 +303,19 @@
         <p>© 2026 The Dream Home. All Rights Reserved.</p>
 
     </footer>
+<script>
 
+function showDetails(propertyName, location, price) {
+
+    alert(
+        "Property: " + propertyName +
+        "\nLocation: " + location +
+        "\nPrice: " + price
+    );
+
+}
+
+</script>
 </body>
 
                         </html>
