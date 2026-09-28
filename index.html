@@ -441,6 +441,53 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     message.textContent = "Thank you! Your message has been received.";
 
 });
+
+    function filterProperties() {
+
+    let searchText = document.getElementById("searchInput").value.toLowerCase();
+
+    let price = document.getElementById("priceFilter").value;
+
+    let properties = document.querySelectorAll(".property-card");
+
+    properties.forEach(function(property) {
+
+        let propertyText = property.textContent.toLowerCase();
+
+        let showProperty = propertyText.includes(searchText);
+
+        if (price !== "all") {
+
+            let propertyPrice = property.querySelector("h4").textContent;
+
+            let priceNumber;
+
+            if (propertyPrice.includes("75")) {
+                priceNumber = 75;
+            } 
+            else if (propertyPrice.includes("1.25")) {
+                priceNumber = 125;
+            } 
+            else if (propertyPrice.includes("2")) {
+                priceNumber = 200;
+            }
+
+            if (priceNumber > Number(price)) {
+                showProperty = false;
+            }
+        }
+
+        if (showProperty) {
+            property.style.display = "block";
+        } 
+        else {
+            property.style.display = "none";
+        }
+
+    });
+
+    }
+    
 </script>
 </body>
 
