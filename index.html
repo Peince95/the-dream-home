@@ -295,6 +295,8 @@
 
     <button onclick="filterProperties()">Search</button>
 
+            <button onclick="resetFilters()">Reset</button>
+            
         </div>
 
         <div class="property-container">
@@ -487,6 +489,22 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     });
 
     }
+
+    function resetFilters() {
+
+    document.getElementById("searchInput").value = "";
+
+    document.getElementById("priceFilter").value = "all";
+
+    let properties = document.querySelectorAll(".property-card");
+
+    properties.forEach(function(property) {
+
+        property.style.display = "block";
+
+    });
+
+        }
     
 </script>
 </body>
